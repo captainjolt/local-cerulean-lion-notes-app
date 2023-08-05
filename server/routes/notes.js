@@ -4,7 +4,7 @@ import * as NotesController from "../controllers/notes.js";
 const router = express.Router();
 
 router.get("/notes", NotesController.getNotes);
-router.get("/notes/:id", NotesController.getNoteById);
+router.get("/notes/:title", NotesController.getNoteByTitle);
 router.post("/notes", NotesController.createNote);
 router.delete("/notes/:id", NotesController.deleteNote);
 
